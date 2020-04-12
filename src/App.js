@@ -1,24 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+
+import Appbar from './components/Appbar'
+import Head from './components/Head'
+import SendLapor from './components/SendLapor'
+import About from './components/About'
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+    backgroundColor: '#F7F7F7'
+  },
+  appBar: {
+    boxShadow: 'none'
+  },
+  toolBar: {
+    backgroundColor: '#00AEEF'
+  },
+  title: {
+    flexGrow: 1,
+    color: 'white'
+  },
+  content: {
+    backgroundColor: 'white',
+    marginTop: 45,
+    paddingBottom: 45,
+    paddingTop: 45
+  },
+}));
 
 function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={classes.root}>
+      <Appbar/>
+
+      <Container maxWidth="sm" className={classes.content} >
+        <Head/>
+        <SendLapor/>
+        <About/>
+      </Container>
     </div>
   );
 }
