@@ -2,6 +2,6 @@
 
 ### Step menjalankan aplikasi
 
-1. yarn install
+1. npm/yarn install
 2. cp `.env.example` `.env`
-3. yarn start
+3. npm start
