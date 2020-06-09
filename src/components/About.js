@@ -11,10 +11,10 @@ function About(props) {
             <Avatar src="me.png" style={{padding:5}} />
             <Avatar src="kominfo.png" style={{padding:5}} />
           </div>
-          <div style={{ marginTop:50}}>
+          {/* <div style={{ marginTop:50}}>
             <a href="#" style={{padding:10, textDecoration:'none', color:'#00AEEF'}}>Tentang kami</a>
             <a href="#" style={{padding:10, textDecoration:'none', color:'#00AEEF'}}>Hubungi kami</a>
-          </div>
+          </div> */}
           <p style={{marginTop:100}}>
             Copyright 2020. Muara Enim Smart Regency
           </p>

@@ -1,3 +1,6 @@
+// REACT_APP_BASE_API=https://wbs.muaraenimkab.go.id/admin/api/
+// REACT_APP_BASE_API=http://localhost:8000/api/
+
 import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -36,7 +39,6 @@ function App() {
   return (
     <div className={classes.root}>
       <Appbar/>
-
       <Container maxWidth="sm" className={classes.content} >
         <Head/>
         <SendLapor/>
